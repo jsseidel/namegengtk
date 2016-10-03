@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+	<gresource prefix="/res">
+		<file preprocess="xml-stripblanks">namegen.glade</file>
+		<file>namegen_icon.png</file>
+		<file>names/ffn.txt</file>
+		<file>names/mfn.txt</file>
+		<file>names/ln.txt</file>
+	</gresource>
+</gresources>
