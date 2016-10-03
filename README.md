@@ -1,0 +1,2 @@
+# namegengtk
+A name generator
