@@ -29,7 +29,7 @@ resources.h: resources.c
 	$(GLIB_COMPILE_RESOURCES) resources.xml --target=$@ --sourcedir=. --generate-header
 
 clean:
-	rm -f namegen *.o *~ resources.c resources.h
+	rm -f *.o *~ resources.c resources.h
 
 install: $(EXE)
 	sudo cp -i ./namegen_icon.png /usr/share/icons/.
