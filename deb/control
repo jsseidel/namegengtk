@@ -1,0 +1,8 @@
+Package: NameGen
+Architecture: amd64
+Maintainer: Spencer Seidel
+Depends: debconf (>= 0.5.00)
+Priority: optional
+Version: 0.9
+Description: NameGen
+	A name-generation tool
