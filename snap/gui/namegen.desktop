@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Namegen
+Exec=namegen
+Type=Application
+Icon=${SNAP}/meta/gui/namegen.png

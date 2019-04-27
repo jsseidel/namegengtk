@@ -1,3 +1,5 @@
+VERS = $(shell cat VERSION)
+BINDIR=/usr/bin
 CC = gcc
 LD = gcc
 CFLAGS = -c -g -Wall $(shell pkg-config --cflags --libs gtk+-3.0)
@@ -17,6 +19,10 @@ resources = $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=. --generate-dependenc
 
 all: resources.c resources.h $(EXE)
 
+install: all
+	mkdir -p $(DESTDIR)$(BINDIR)
+	cp $(EXE) $(DESTDIR)$(BINDIR)/
+
 $(EXE): $(OBJS)
 	$(LD) -o $@ $(OBJS) $(LDFLAGS)
 
@@ -30,10 +36,5 @@ resources.h: resources.c
 
 clean:
 	rm -f *.o *~ resources.c resources.h
-
-install: $(EXE)
-	sudo cp -i ./namegen_icon.png /usr/share/icons/.
-	sudo cp -i $(EXE) /usr/bin/.
-	sudo cp -i ./NameGenerator.desktop /usr/share/applications/.
 
 
