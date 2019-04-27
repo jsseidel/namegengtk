@@ -37,4 +37,18 @@ resources.h: resources.c
 clean:
 	rm -f *.o *~ resources.c resources.h
 
+##########################################################################################3
+# Debian source package
+#
+# Update version in:
+#   debian/changelog
+#   debian/files
+#   draftman.glade
+#
+
+debian_source:
+	debuild -S
+
+dput:
+	dput ppa:jsseidel/namegen ../namegen_$(VERS)_source.changes
 

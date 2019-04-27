@@ -1,0 +1,23 @@
+Source: namegen
+Section: text
+Priority: optional
+Maintainer: Joseph Spencer Seidel <jsseidel@fastmail.com>
+Build-Depends: debhelper (>= 10),
+               gnome-pkg-tools (>= 0.10),
+               gnome-common,
+               libxml2-dev (>= 2.4.0),
+               libglib2.0-dev (>= 2.53.2),
+               libgtk-3-dev (>= 3.20.0),
+               gobject-introspection (>= 1.32.0)
+Standards-Version: 4.1.2
+Homepage: https://github.com/jsseidel/namegengtk
+Vcs-Git: https://github.com/jsseidel/namegengtk.git
+Vcs-Browser: https://github.com/jsseidel/namegengtk
+
+Package: namegen
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A name-generating utility for writers.
+   Namegen is a name-generating utility for writers. Names are taken from US
+   Census data and stored inside the application, ranked by obscurity. Generate
+   male or female first names and last names. Great for passwords.
