@@ -28,7 +28,8 @@ sudo apt install namegen
 
 ### Deb
 
-[releases page](https://github.com/jsseidel/namegengtk/releases):
+Go to the [releases page](https://github.com/jsseidel/namegengtk/releases) and
+download a deb package.
 
 ```bash
 sudo apt install -y ./namegen_1.0.0_amd64.deb
