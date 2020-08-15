@@ -18,6 +18,18 @@ The easiest and best way to install Namegen on Ubuntu systems is via snap:
 sudo snap install namegen
 ```
 
+#### Font problem note
+
+When I first ran this in KDE (my desktop of choice), the app started up displaying rectangles instead of characters. The fix for me in KDE was this:
+
+```
+sudo rm /var/cache/fontconfig/*
+rm ~/.cache/fontconfig/*
+fc-cache -r
+```
+
+Reference: [https://forum.snapcraft.io/t/snapped-app-not-loading-fonts-on-fedora-and-arch/12484/36](https://forum.snapcraft.io/t/snapped-app-not-loading-fonts-on-fedora-and-arch/12484/36)
+
 ### PPA
 
 ```bash
