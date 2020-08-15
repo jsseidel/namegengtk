@@ -30,14 +30,6 @@ fc-cache -r
 
 Reference: [https://forum.snapcraft.io/t/snapped-app-not-loading-fonts-on-fedora-and-arch/12484/36](https://forum.snapcraft.io/t/snapped-app-not-loading-fonts-on-fedora-and-arch/12484/36)
 
-### PPA
-
-```bash
-sudo add-apt-repository ppa:jsseidel/namegen
-sudo apt update
-sudo apt install namegen
-```
-
 ### Deb
 
 Go to the [releases page](https://github.com/jsseidel/namegengtk/releases) and
