@@ -20,10 +20,9 @@ sudo snap install namegen
 
 #### Font problem note
 
-When I first ran this in KDE (my desktop of choice), the app started up displaying rectangles instead of characters. The fix for me in KDE was this:
+When I run the snap in KDE (my desktop of choice) after a restart, the app starts up displaying rectangles instead of characters. The fix for me in KDE was this (which I do upon startup). Hopefully, they'll fix this bug soon.
 
 ```
-sudo rm /var/cache/fontconfig/*
 rm ~/.cache/fontconfig/*
 fc-cache -r
 ```
